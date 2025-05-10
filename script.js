@@ -63,3 +63,14 @@ if (signupForm) {
     this.reset();
   });
 }
+
+// Contact Form Submission
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Add form submission logic here
+    alert('Thank you for your message! Our team will contact you shortly.');
+    this.reset();
+  });
+}
